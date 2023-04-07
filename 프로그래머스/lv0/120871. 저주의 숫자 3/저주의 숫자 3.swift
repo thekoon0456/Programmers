@@ -5,7 +5,7 @@ func solution(_ n:Int) -> Int {
     var num = 1
     
     while result.count != n {
-        if num % 3 != 0 && num % 10 != 3 && !(30...39).contains(num) && !(130...139).contains(num) {
+        if num % 3 != 0 && !String(num).contains("3") {
             result.append(num)
         }
         num += 1
