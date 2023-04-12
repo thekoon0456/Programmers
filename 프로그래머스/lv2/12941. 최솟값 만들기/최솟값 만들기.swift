@@ -7,8 +7,8 @@ func solution(_ A:[Int], _ B:[Int]) -> Int {
     
     for _ in 0..<arrA.count {
         result += arrA.first! * arrB.last!
-            arrA.removeFirst()
-            arrB.removeLast()
+        arrA.removeFirst()
+        arrB.removeLast()
     }
     
     return result
