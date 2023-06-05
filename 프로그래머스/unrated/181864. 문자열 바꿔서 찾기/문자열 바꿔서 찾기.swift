@@ -1,7 +1,5 @@
 import Foundation
 
 func solution(_ myString:String, _ pat:String) -> Int {
-    var result = ""
-    myString.map { if $0 == "A" { result += "B" } else { result += "A" }  }
-    return result.contains(pat) ? 1 : 0
+    myString.map { $0 == "A" ? "B" : "A" }.joined().contains(pat) ? 1 : 0
 }
